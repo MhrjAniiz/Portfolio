@@ -7,6 +7,7 @@ class Project(models.Model):
     image = models.ImageField(upload_to='image/images/')
     url_link = models.URLField(blank=True)
 
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
+
 
